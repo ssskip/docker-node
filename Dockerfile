@@ -13,7 +13,7 @@ RUN apk add --no-cache \
         linux-headers \
         py-pip 
         
-RUN pip install --upgrade pip && pip install s3cmd
+RUN pip install --upgrade pip && pip install s3cmd && pip install awscli --upgrade
 
 RUN npm install -g jsonlint-cli
 
